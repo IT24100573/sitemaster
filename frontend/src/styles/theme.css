@@ -1,0 +1,24 @@
+/*
+ * SiteMaster theme tokens. Colours are RGB channels so Tailwind can apply
+ * opacity (see tailwind.config.js). Use rgb(var(--color-primary)) in plain CSS.
+ */
+:root {
+  --color-background: 255 255 255;    /* #FFFFFF */
+  --color-surface: 248 249 250;       /* #F8F9FA light grey sections */
+  --color-primary: 249 115 22;        /* #F97316 primary orange */
+  --color-primary-dark: 234 88 12;    /* #EA580C hover / dark orange */
+  --color-primary-light: 255 247 237; /* #FFF7ED highlighted cards, active nav */
+  --color-text: 31 41 55;             /* #1F2937 */
+  --color-text-muted: 107 114 128;    /* #6B7280 */
+  --color-border: 229 231 235;        /* #E5E7EB */
+
+  --radius-card: 12px;
+  --shadow-card: 0 1px 2px rgb(16 24 40 / 0.04), 0 4px 12px rgb(16 24 40 / 0.06);
+
+  /* Construction hazard band used as the brand accent. */
+  --hazard-band: repeating-linear-gradient(
+    -45deg,
+    rgb(var(--color-primary)) 0 10px,
+    rgb(var(--color-text)) 10px 20px
+  );
+}
